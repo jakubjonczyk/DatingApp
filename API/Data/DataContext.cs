@@ -1,3 +1,4 @@
+//To oraz caly folder ja stworzylem
 using API.Entities;
 using Microsoft.EntityFrameworkCore;
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿//To oraz caly folder ja stworzylem
+using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace API.Data.Migrations
 {

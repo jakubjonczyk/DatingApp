@@ -18,6 +18,7 @@ namespace API
 {
     public class Startup
     {
+        //To ja stworzylem
         private readonly IConfiguration _config;
         public Startup(IConfiguration config)
         {
@@ -28,6 +29,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //To ja stworzylem
             services.AddDbContext<DataContext>(options =>
             {
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
@@ -52,6 +54,8 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            //app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200"));
+            app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 
             app.UseAuthorization();
 

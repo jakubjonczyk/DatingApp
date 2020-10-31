@@ -1,3 +1,4 @@
+//To oraz caly folder ja stworzylem
 namespace API.Entities
 {
     public class AppUser
